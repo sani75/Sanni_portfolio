@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sanni Kumar — Full-Stack Developer & Software Engineering Intern Portfolio. Responsive web development, JavaScript, HTML5, CSS3.">
+  <title>Sanni Kumar | Full-Stack Developer & Intern Portfolio</title>
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ======================================================================
+       HEADER & NAVIGATION BAR (Semantic <header> & <nav>)
+       ====================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container navbar">
+      <!-- Brand / Logo -->
+      <a href="#hero" class="nav-brand" aria-label="Sanni Kumar Portfolio Home">
+        <div class="brand-icon">SK</div>
+        <span>Sanni Kumar</span>
+      </a>
+
+      <!-- Primary Navigation Menu -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions: Theme Toggle & Mobile Menu Trigger -->
+      <div class="nav-actions">
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Switch to dark mode" title="Toggle color theme">
+          <span id="theme-icon">🌙</span>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       MAIN CONTENT (Semantic <main>)
+       ====================================================================== -->
+  <main id="main">
+
+    <!-- --------------------------------------------------------------------
+         1. HERO SECTION (Semantic <section>)
+         -------------------------------------------------------------------- -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrapper">
+            <span class="hero-status-badge">
+              <span class="pulse-dot"></span>
+              Available for Internship & Full-time Roles
+            </span>
+          </div>
+          <p class="hero-greeting">Hi there, I'm</p>
+          <h1 class="hero-title">
+            Sanni Kumar,<br>
+            <span class="highlight">Full-Stack Developer</span>
+          </h1>
+          <p class="hero-pitch">
+            Passionate software engineering intern specializing in building responsive, high-performance web applications with clean architecture and modern JavaScript.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <span>↓</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get In Touch</span>
+              <span>→</span>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/sani75" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="GitHub Profile" title="GitHub">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sanni-k-853909264?trk=contact-info" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="hero-social-link" aria-label="X / Twitter Profile" title="Twitter">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-avatar-wrapper">
+              <img src="assets/images/avatar.jpg" alt="Sanni Kumar - Software Engineering Intern Headshot" width="400" height="400">
+            </div>
+            <div class="floating-pill pill-right">
+              <span class="pill-icon pill-blue">⚡</span>
+              <span>Fast & Scalable Code</span>
+            </div>
+            <div class="floating-pill pill-left">
+              <span class="pill-icon pill-purple">★</span>
+              <span>Clean UI & UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         2. ABOUT SECTION (Semantic <section>)
+         -------------------------------------------------------------------- -->
+    <section id="about" class="about" aria-label="About Me">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity & Problem-Solving</h2>
+          <p class="section-subtitle">
+            A developer who loves crafting accessible, scalable, and delightful digital experiences from concept to deployment.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio">
+            <p>
+              Hello! I'm Sanni, a software engineering intern with a strong foundation in modern web technologies. I specialize in turning complex problems into elegant, intuitive interfaces with clean, maintainable code.
+            </p>
+            <p>
+              My journey began with curiosity about how websites operate behind the scenes. Today, I build full-stack web applications emphasizing <strong>semantic HTML5</strong>, <strong>responsive CSS architecture</strong>, and <strong>robust JavaScript (ES6+)</strong>.
+            </p>
+            <p>
+              When I'm not coding, you can find me reviewing open-source repositories, participating in hackathons, or reading about web performance optimization and distributed systems.
+            </p>
+          </div>
+
+          <div class="about-stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">10+</div>
+              <div class="stat-label">Web Projects</div>
+              <div class="stat-desc">From front-end UI prototypes to full-stack applications.</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Responsive Layouts</div>
+              <div class="stat-desc">Crafted mobile-first for 375px mobile, tablet, and 1280px+ desktop.</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">250+</div>
+              <div class="stat-label">Git Commits</div>
+              <div class="stat-desc">Disciplined version control and documentation practices.</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">3+</div>
+              <div class="stat-label">Core Specializations</div>
+              <div class="stat-desc">Modern JS, UI/UX Engineering, and RESTful API Integration.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         3. SKILLS SECTION (Semantic <section>)
+         -------------------------------------------------------------------- -->
+    <section id="skills" class="skills" aria-label="Technical Skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Toolkit</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">
+            Tools, languages, and frameworks I use to bring ideas to life.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <!-- Frontend Skills -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+              </div>
+              <h3 class="category-title">Frontend</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">Semantic HTML5</li>
+              <li class="skill-pill">Modern CSS3</li>
+              <li class="skill-pill">JavaScript (ES6+)</li>
+              <li class="skill-pill">Flexbox & CSS Grid</li>
+              <li class="skill-pill">Responsive Design</li>
+              <li class="skill-pill">DOM Manipulation</li>
+              <li class="skill-pill">Fetch & REST APIs</li>
+            </ul>
+          </div>
+
+          <!-- Backend & Database Skills -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+              </div>
+              <h3 class="category-title">Backend & Data</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">Node.js</li>
+              <li class="skill-pill">Express.js</li>
+              <li class="skill-pill">RESTful API Design</li>
+              <li class="skill-pill">JSON & Async/Await</li>
+              <li class="skill-pill">SQL & PostgreSQL</li>
+              <li class="skill-pill">MongoDB</li>
+              <li class="skill-pill">Authentication (JWT)</li>
+            </ul>
+          </div>
+
+          <!-- Tools & Workflow Skills -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+              </div>
+              <h3 class="category-title">Tools & Workflow</h3>
+            </div>
+            <ul class="skills-list">
+              <li class="skill-pill">Git & GitHub</li>
+              <li class="skill-pill">VS Code</li>
+              <li class="skill-pill">Chrome DevTools</li>
+              <li class="skill-pill">Terminal / Bash</li>
+              <li class="skill-pill">Figma to HTML</li>
+              <li class="skill-pill">Postman</li>
+              <li class="skill-pill">Web Accessibility (a11y)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         4. PROJECT SHOWCASES (Semantic <section> & <article>)
+         -------------------------------------------------------------------- -->
+    <section id="projects" class="projects" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects Showcase</h2>
+          <p class="section-subtitle">
+            A selection of projects demonstrating frontend design, API integration, and full-stack capabilities.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (3)</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-thumb">
+              <img src="assets/images/project-cloudpulse.jpg" alt="CloudPulse Analytics Dashboard Preview" loading="lazy">
+              <span class="project-category-badge">Frontend</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">CloudPulse Telemetry</h3>
+              <p class="project-description">
+                A real-time telemetry dashboard providing interactive data visualization, CPU/memory performance monitoring, and customizable alert thresholds.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Data Viz</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-primary btn-sm btn-demo" data-project="cloudpulse" aria-label="Live Demo for CloudPulse">
+                  <span>Live Demo</span>
+                  <span>⚡</span>
+                </button>
+                <a href="https://github.com/sani75" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Repository for CloudPulse">
+                  <span>Code</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumb">
+              <img src="assets/images/project-flowboard.jpg" alt="FlowBoard Agile Task Manager Preview" loading="lazy">
+              <span class="project-category-badge">Full Stack</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">FlowBoard Organizer</h3>
+              <p class="project-description">
+                An interactive Kanban board featuring task organization, priority tags, real-time status progression, and persistent state management.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">Semantic HTML</span>
+                <span class="tech-tag">CSS Grid</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">State Storage</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-primary btn-sm btn-demo" data-project="flowboard" aria-label="Live Demo for FlowBoard">
+                  <span>Live Demo</span>
+                  <span>⚡</span>
+                </button>
+                <a href="https://github.com/sani75" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Repository for FlowBoard">
+                  <span>Code</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumb">
+              <img src="assets/images/project-nexusmarket.jpg" alt="NexusMarket E-Commerce Storefront Preview" loading="lazy">
+              <span class="project-category-badge">Full Stack</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">NexusMarket Storefront</h3>
+              <p class="project-description">
+                A modern e-commerce web application with dynamic product filtering, cart drawer calculations, and mobile-responsive checkout flow.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">Flexbox</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Cart Logic</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-primary btn-sm btn-demo" data-project="nexusmarket" aria-label="Live Demo for NexusMarket">
+                  <span>Live Demo</span>
+                  <span>⚡</span>
+                </button>
+                <a href="https://github.com/sani75" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" aria-label="GitHub Repository for NexusMarket">
+                  <span>Code</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------
+         5. CONTACT SECTION (Semantic <section>)
+         -------------------------------------------------------------------- -->
+    <section id="contact" class="contact" aria-label="Contact Information">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Connect & Collaborate</h2>
+          <p class="section-subtitle">
+            I'm currently looking for software engineering internship opportunities. Feel free to reach out with questions, projects, or just to say hi!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info">
+            <!-- Email -->
+            <div class="contact-item-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div style="flex: 1;">
+                <div class="contact-item-label">Direct Email</div>
+                <div class="contact-item-value">
+                  <a href="mailto:Sannikumarkhg2002@gmail.com">Sannikumarkhg2002@gmail.com</a>
+                </div>
+                <div style="margin-top: 0.5rem;">
+                  <button id="copy-email-btn" class="btn btn-secondary btn-sm" aria-label="Copy email address to clipboard">Copy Email</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location & Availability -->
+            <div class="contact-item-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <div class="contact-item-label">Location & Status</div>
+                <div class="contact-item-value">Remote & Open to Relocation</div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.25rem;">Available for immediate internship joining.</p>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-socials-group">
+              <div class="contact-item-label">Find Me Online</div>
+              <div class="contact-social-buttons">
+                <a href="https://github.com/sani75" target="_blank" rel="noopener noreferrer" class="social-button">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sanni-k-853909264?trk=contact-info" target="_blank" rel="noopener noreferrer" class="social-button">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-button">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  <span>Twitter / X</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <p class="form-subtitle">Fill in the fields below and I'll get back to you within 24 hours.</p>
+
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Jane Doe" required>
+                <span class="form-error">Please enter your name (at least 2 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="jane.doe@example.com" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject *</label>
+                <input type="text" id="subject" name="subject" class="form-control" placeholder="Internship Opportunity / Inquiry" required>
+                <span class="form-error">Please enter a subject (at least 3 characters).</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Tell me about your team or project..." required></textarea>
+                <span class="form-error">Please write a brief message (at least 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <span>✉</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (Semantic <footer>)
+       ====================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span>Sanni Kumar</span> — Web Developer Portfolio
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Sanni Kumar. Built with semantic HTML, modern CSS, and vanilla JavaScript.
+        </div>
+        <button id="back-to-top-btn" class="back-to-top-btn" aria-label="Scroll back to top of page">
+          <span>Back to Top</span>
+          <span>↑</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       PROJECT PREVIEW MODAL
+       ====================================================================== -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Project Demo</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc"></p>
+        <div class="modal-demo-box" id="modal-demo"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       TOAST NOTIFICATION
+       ====================================================================== -->
+  <div class="toast-container">
+    <div class="toast toast-success" id="toast" role="status" aria-live="polite">
+      <span class="toast-icon">✓</span>
+      <span id="toast-message">Message sent successfully!</span>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
